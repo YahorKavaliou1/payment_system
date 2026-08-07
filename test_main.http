@@ -1,0 +1,13 @@
+### Health
+GET http://localhost:8000/health
+
+### Payment webhook (confirmed)
+POST http://localhost:8000/webhook/payment
+Content-Type: application/json
+
+{
+  "payment_id": "abc-123",
+  "user_id": 1,
+  "amount": 4900,
+  "status": "CONFIRMED"
+}
